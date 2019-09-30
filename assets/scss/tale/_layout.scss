@@ -58,6 +58,9 @@ footer,
     &:focus {
       opacity: 1;
     }
+    &.active {
+      font-weight: bold;
+    }
   }
 
   a {
