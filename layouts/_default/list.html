@@ -2,7 +2,8 @@
 
 <main>
 	<div class="catalogue">
-		{{ range (.Paginate .Pages).Pages }}
+		{{ $paginator := .Paginate (.Site.RegularPages) }}
+		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
 	</div>
